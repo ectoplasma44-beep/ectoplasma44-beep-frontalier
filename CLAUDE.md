@@ -48,8 +48,12 @@ Règle SEO : laisser un contenu **dormir 90 jours** avant de juger sa position. 
 - [x] Pivot Genève confirmé par la data (`dossier/06`).
 - [x] Étape 3 — 4 calculateurs arrêtés sur volumes Haloscan réels (`dossier/04`, `06`) : Télétravail (vitrine/trafic), Droit d'option (affiliation), Quasi-résident Genève (hook produit €89), Salaire net CHF→EUR.
 - [x] Étape 4 — Archi des routes conçue (`dossier/07`) : produit + 4 calculateurs + hub Genève × situations + comparatifs/FAQ + blog.
-- [ ] Étape 5+ — SESSION_TASKS.md scaffolding pour Claude Code (structure + produit + 1er calculateur Télétravail), calculateurs, affiliation.
-- [ ] Pré-requis Abi : repo `ectoplasma44-beep`, domaine OVH, checkout Gumroad/Stripe.
+- [x] Étape 5 — Build #1 (scaffolding + produit + Télétravail) déployé (commit 79d6fe8).
+- [x] Étape 5 — Build #2 (calculateurs Droit d'option + Quasi-résident v1) déployé (commit 0ba4fab). 3 calculateurs en ligne, garde-fous §7 tenus.
+- [x] Infra : domaine `monimpotfrontalier.fr` (vert), repo `ectoplasma44-beep/ectoplasma44-beep-frontalier` + Vercel connecté.
+- [ ] Étape 6 — Calculateur Salaire net CHF→EUR (C4) : **vérif préalable requise** (charges sociales suisses + taux de change, §4) avant SESSION_TASKS #3.
+- [ ] Hub Genève × situations (canton-modèle), puis duplication cantons.
+- [ ] Pré-requis Abi restants : produit Gumroad (vrai lien) ; abattement CMU officiel à saisir.
 
 ## 9. Déclencheur de lancement
 Tant que **monindemnite.fr** n'a pas prouvé qu'un visiteur paie (test kit rupture conventionnelle), ce projet reste en **scaffolding / tâche de fond** (structure, vérif fiscale, choix calculateurs) — pas en lancement plein. Signal obtenu → priorité haute.

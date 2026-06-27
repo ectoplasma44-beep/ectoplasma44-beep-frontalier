@@ -50,6 +50,25 @@ export default function Home() {
         </Link>
       </section>
 
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold">Votre canton</h2>
+        <Link
+          href="/frontalier/geneve"
+          className="block rounded-2xl border border-slate-200 p-6 transition hover:border-slate-300 hover:shadow-sm"
+        >
+          <h3 className="text-lg font-semibold">
+            Frontalier à Genève&nbsp;: le guide complet
+          </h3>
+          <p className="mt-2 text-sm text-slate-600">
+            Impôt à la source, quasi-résident, télétravail, assurance maladie,
+            salaire net — situation par situation.
+          </p>
+          <span className="mt-3 inline-block text-sm font-medium text-slate-900">
+            Ouvrir le guide Genève →
+          </span>
+        </Link>
+      </section>
+
       <BlocOffre />
     </div>
   );

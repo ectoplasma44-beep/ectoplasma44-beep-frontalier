@@ -16,6 +16,11 @@
 - **[O] ge.ch — Déterminer le statut de quasi-résident**
   https://www.ge.ch/demande-rectification-taxation-ordinaire-ulterieure/determiner-statut-quasi-resident
   → seuil 90 % revenus bruts mondiaux du foyer ; TOU ; déductions ; taux mondial.
+- **[O] ge.ch — Demande de rectification / TOU (DRIS)**
+  https://www.ge.ch/demande-rectification-taxation-ordinaire-ulterieure
+  → **délai : 31 mars de l'année qui suit le prélèvement** ; demande **irréversible** une fois déposée ; dépôt via e-démarches.
+- **[O] ge.ch — Calculette et barèmes de perception de l'impôt à la source** (barèmes A/B/C/G/H selon situation familiale, forfait frais pro + assurance intégré)
+  https://www.ge.ch/impot-source/calculette-baremes-perception-impot-source ; https://www.ge.ch/document/baremes-2026-perception-impot-source
 
 ## Droit d'option assurance maladie
 - **[O] ameli.fr — Travailleur frontalier suisse**

@@ -88,6 +88,17 @@ export default function CalculateursIndex() {
           );
         })}
       </ul>
+
+      <p className="text-sm text-slate-600">
+        Frontalier à Genève ?{" "}
+        <Link
+          href="/frontalier/geneve"
+          className="font-medium text-slate-900 underline"
+        >
+          Consultez le guide Genève
+        </Link>{" "}
+        (impôt à la source, quasi-résident, assurance…).
+      </p>
     </div>
   );
 }
