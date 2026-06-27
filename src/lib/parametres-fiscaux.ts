@@ -7,6 +7,9 @@
 // Session #2 (SESSION_TASKS-02.md) : CMU frontalier, droit d'option, quasi-résident.
 //   ⚠️ cmuFrontalier.abattementAnnee reste `null` (chiffre officiel non confirmé,
 //   cf. dossier/03) → tant qu'il est null, ne JAMAIS afficher de cotisation CMU en €.
+// Session #4 (SESSION_TASKS-04.md) : charges sociales salarié CH, taux de change.
+//   ⚠️ tauxChangeIndicatif.chfEur reste `null` (jamais de change figé en dur, §4)
+//   → le taux est saisi par l'utilisateur tant qu'Abi n'a pas pré-rempli une valeur datée.
 
 export const PARAMS = {
   teletravail: {
@@ -48,5 +51,23 @@ export const PARAMS = {
     source:
       "https://www.ge.ch/demande-rectification-taxation-ordinaire-ulterieure/determiner-statut-quasi-resident",
     // ⚠️ Barème impôt source GE + calcul taxation ordinaire = NON vérifiés → pas de gain € en v1.
+  },
+
+  chargesSocialesCH: {
+    // Part SALARIÉ, déduite du brut. Source : ahv-iv.ch mémento 2.01 ; bsv.admin.ch/fr/cotisations-apercu
+    avsAiApg: 0.053, // 5,3 % (AVS 4,35 + AI 0,7 + APG 0,25), pas de plafond
+    ac: 0.011, // 1,1 % assurance chômage (part salarié)
+    acPlafondAnnuelCHF: 148200, // AC due jusqu'à 148 200 CHF/an ; au-delà : 0
+    millesime: "Taux 2026.",
+    source:
+      "https://www.ahv-iv.ch/p/2.01.f ; https://www.bsv.admin.ch/fr/cotisations-apercu",
+    // ⚠️ Traitement au-delà du plafond AC = 0 (contribution de solidarité supprimée) — À VÉRIFIER avant de l'afficher comme certain.
+    // LPP (2e pilier) et AANP (accident non pro) = VARIABLES → saisie utilisateur, PAS de taux ici.
+  },
+
+  tauxChangeIndicatif: {
+    chfEur: null as number | null, // ex. 1.06 — à renseigner depuis réf. BCE, avec date + source. null = champ vide, l'utilisateur saisit.
+    date: "", // date du taux indicatif
+    source: "https://www.ecb.europa.eu/ (taux de référence) — à confirmer",
   },
 } as const;

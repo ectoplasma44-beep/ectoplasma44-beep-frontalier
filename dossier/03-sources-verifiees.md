@@ -70,6 +70,21 @@ Les **exemples de la page officielle elle-même sont incohérents** sur l'année
 - **MAIS chiffrer le gain € exige un moteur de taxation ordinaire GE complet (ICC cantonal + IFD fédéral + déductions)** — lourd et à fort risque d'erreur. **Décision (§10 anti-sur-ingénierie + §7) : on NE construit PAS ce moteur.** Le calculateur quasi-résident reste un outil d'**éligibilité + pédagogie** ; le **chiffrage personnalisé = rôle du produit €89** (ou renvoi vers la calculette officielle ge.ch). Pas de montant de gain fabriqué.
 - Fourchette « 3 000–8 000 CHF » vue chez des courtiers = **secondaire, non officielle → ne pas l'afficher comme un chiffre du site.**
 
+## Charges sociales salarié suisses (calculateur Salaire net C4) — 2026
+Sources officielles :
+- **[O] ahv-iv.ch — Mémento 2.01 Cotisations salariales AVS/AI/APG** : https://www.ahv-iv.ch/p/2.01.f
+- **[O] bsv.admin.ch — Aperçu des cotisations** : https://www.bsv.admin.ch/fr/cotisations-apercu
+
+Part **salarié** (déductions sur le brut), 2026 :
+- AVS 8,7 % + AI 1,4 % + APG 0,5 % = 10,6 % au total, **partagé 50/50** → **part salarié = 5,3 %** (4,35 + 0,7 + 0,25). Pas de plafond.
+- **AC (chômage) : 2,2 % total → part salarié 1,1 %**, sur le salaire jusqu'à **148 200 CHF/an** (≈ 12 350 CHF/mois) par contrat. Au-delà du plafond : 0 (contribution de solidarité supprimée — **À VÉRIFIER** le traitement au-delà du plafond avant de l'afficher).
+
+Variables → **saisie utilisateur**, jamais un taux figé :
+- **LPP (2e pilier)** : dépend de l'âge et du plan (bonifications par tranche d'âge) → pas de taux unique. Champ utilisateur optionnel.
+- **AANP (accident non professionnel)** : fixé par l'employeur (~1-2 %) → champ utilisateur optionnel.
+
+**Taux de change CHF→EUR** : §4 → jamais figé en dur. Décision produit : **saisie utilisateur**, avec une valeur indicative pré-remplie **datée + sourcée** (réf. BCE) dans `parametres-fiscaux.ts`, à rafraîchir périodiquement par Abi. UI : « taux indicatif au [date], ajustez avec votre taux réel ».
+
 ## À recouper sur source primaire avant publication
 - Base légale du régime genevois (« accord 1973 ») et taux exact de rétrocession au fonds frontalier (Ain / Haute-Savoie).
 - Taux de cotisation PUMA et primes LAMal de référence (millésime applicable).

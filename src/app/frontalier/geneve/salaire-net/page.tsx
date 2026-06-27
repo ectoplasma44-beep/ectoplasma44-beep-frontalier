@@ -16,6 +16,10 @@ export default function SalaireNetGenevePage() {
         situation: "Salaire net",
       }}
       h1="Du salaire brut suisse au net en euros"
+      cta={{
+        href: "/calculateurs/salaire-net-frontalier-suisse",
+        label: "Estimer mon salaire net (calculateur)",
+      }}
     >
       <ul className="list-disc space-y-2 pl-5">
         <li>
@@ -30,10 +34,10 @@ export default function SalaireNetGenevePage() {
         role="note"
         className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600"
       >
-        Page pédagogique en attente du calculateur Salaire net : les{" "}
-        <strong>taux de cotisations et le taux de change restent à sourcer</strong>{" "}
-        avant tout chiffrage. En l&apos;état, cette page n&apos;affiche aucun
-        montant.
+        Notre calculateur estime le net <strong>après charges sociales,
+        avant impôt à la source</strong> (la part fiscale dépend du barème
+        genevois — voir la page impôt à la source). Le taux de change est saisi
+        par vos soins.
       </div>
     </PageCantonSituation>
   );

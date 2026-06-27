@@ -39,7 +39,8 @@ const OUTILS: Outil[] = [
   {
     titre: "Salaire net frontalier",
     description: "Convertir un salaire suisse en net estimatif (CHF → EUR).",
-    statut: "bientot",
+    href: "/calculateurs/salaire-net-frontalier-suisse",
+    statut: "actif",
   },
 ];
 
