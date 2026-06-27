@@ -1,6 +1,6 @@
 # SESSION_TASKS.md — #1 Scaffolding + Produit + Calculateur Télétravail
 
-> Pour : Claude Code (Sonnet). Repo : `ectoplasma44-beep/frontalier`. Domaine cible : `monimpotfrontalier.fr`.
+> Pour : Claude Code (Sonnet). Repo : `ectoplasma44-beep/ectoplasma44-beep-frontalier`. Domaine cible : `monimpotfrontalier.fr`.
 > Lire d'abord `CLAUDE.md` (racine) et `dossier/07-architecture-routes.md`. Respecter §3 (juridique), §4 (vérification), §5 (git).
 > Objectif de cette session : un site déployable sur Vercel avec la home, la page produit, et le 1er calculateur fonctionnel.
 

@@ -7,7 +7,7 @@
 Site d'assistance à la déclaration pour frontaliers franco-suisses : **outil gratuit (calculateurs) → trafic ultra-qualifié → produit payant (~89 €/saison) + affiliation (assurance maladie frontalier)**.
 
 ## 2. Stack & conventions
-- Next.js / TypeScript / Tailwind / Vercel. Domaine OVH : **monimpotfrontalier.fr**. GitHub : `ectoplasma44-beep`.
+- Next.js / TypeScript / Tailwind / Vercel. Domaine OVH : **monimpotfrontalier.fr**. GitHub : `ectoplasma44-beep` — repo réel : **`ectoplasma44-beep/ectoplasma44-beep-frontalier`** (⚠️ pas `…/frontalier`).
 - Tous les paramètres fiscaux centralisés dans `src/lib/parametres-fiscaux.ts` — **jamais en dur dans les composants**. Chaque valeur porte en commentaire son **millésime** et sa **source**.
 
 ## 3. Posture juridique — NON NÉGOCIABLE

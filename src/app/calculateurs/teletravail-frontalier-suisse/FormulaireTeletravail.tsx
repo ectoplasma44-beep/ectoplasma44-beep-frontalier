@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import {
   calculerTeletravail,
@@ -75,14 +76,22 @@ export default function FormulaireTeletravail() {
             Périmètre&nbsp;: imposition uniquement.
           </strong>{" "}
           Ce seuil concerne l&apos;État d&apos;imposition. Les règles de{" "}
-          <strong>sécurité sociale / affiliation</strong> relèvent d&apos;un seuil
-          distinct, non couvert par ce calcul (calculateur «&nbsp;Droit
-          d&apos;option&nbsp;» à venir).
+          <strong>sécurité sociale / affiliation</strong>{" "}
+          relèvent d&apos;un seuil
+          distinct, non couvert par ce calcul (voir le{" "}
+          <Link
+            href="/calculateurs/droit-option-assurance-frontalier"
+            className="font-medium text-slate-900 underline"
+          >
+            calculateur Droit d&apos;option
+          </Link>
+          ).
         </p>
         <p className="mt-2">
           Le périmètre exact peut différer selon votre canton (cantons de
           l&apos;accord de 1983 vs Genève).{" "}
-          <strong>Vérifiez votre canton</strong> auprès de l&apos;administration
+          <strong>Vérifiez votre canton</strong>{" "}
+          auprès de l&apos;administration
           compétente.
         </p>
       </div>

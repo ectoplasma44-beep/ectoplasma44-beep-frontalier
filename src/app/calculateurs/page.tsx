@@ -26,13 +26,15 @@ const OUTILS: Outil[] = [
     titre: "Droit d'option assurance maladie",
     description:
       "Comparer LAMal (Suisse) et régime français, et le délai de 3 mois.",
-    statut: "bientot",
+    href: "/calculateurs/droit-option-assurance-frontalier",
+    statut: "actif",
   },
   {
     titre: "Quasi-résident Genève",
     description:
       "Tester votre éligibilité au statut de quasi-résident (taxation ordinaire ultérieure).",
-    statut: "bientot",
+    href: "/calculateurs/quasi-resident-geneve",
+    statut: "actif",
   },
   {
     titre: "Salaire net frontalier",

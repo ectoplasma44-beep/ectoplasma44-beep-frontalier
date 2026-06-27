@@ -32,7 +32,8 @@
 
 - **2026-06-26 — Checkout : Gumroad** (cohérence avec monindemnite). Frein connu : page de paiement en **anglais / USD** → friction de conversion possible. Arbitrage assumé « signal d'abord ». **À réévaluer avec la data** (taux de conversion réel) ; migration Stripe possible ensuite.
 
+- **2026-06-27 — Infra en place** : domaine `monimpotfrontalier.fr` (OVH, DNS Vercel OK, vert), repo réel **`ectoplasma44-beep/ectoplasma44-beep-frontalier`** créé + connecté à Vercel, push #1 réussi (commit 79d6fe8, `origin/main..main` vide).
+
 ## Reste en attente (Abi)
-- [ ] **Achat du domaine `monimpotfrontalier.fr`** sur OVH + config DNS/Vercel.
-- [ ] **Création du repo** `ectoplasma44-beep/frontalier` (non délégable).
 - [ ] **Lien produit Gumroad** à créer + coller dans la page produit (placeholder en attendant).
+- [ ] **Abattement CMU officiel** à saisir dans `parametres-fiscaux.ts` (depuis simulateur URSSAF) pour activer le chiffrage du calculateur Droit d'option.

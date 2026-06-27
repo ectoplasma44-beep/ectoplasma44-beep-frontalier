@@ -1,6 +1,6 @@
 # SESSION_TASKS.md — #2 Calculateurs Droit d'option + Quasi-résident (v1)
 
-> Pour : Claude Code (Sonnet). Repo : `ectoplasma44-beep/frontalier`. À exécuter APRÈS #1 (scaffolding).
+> Pour : Claude Code (Sonnet). Repo : `ectoplasma44-beep/ectoplasma44-beep-frontalier`. À exécuter APRÈS #1 (scaffolding).
 > Lire `CLAUDE.md`, `dossier/02-cartographie-fiscale.md`, `dossier/03-sources-verifiees.md`, `dossier/07-architecture-routes.md`.
 > Rappels durs : §3 (juridique), §4/§7 (aucun chiffre fiscal non sourcé, sinon `À VÉRIFIER` non affiché), §5 (git).
 
