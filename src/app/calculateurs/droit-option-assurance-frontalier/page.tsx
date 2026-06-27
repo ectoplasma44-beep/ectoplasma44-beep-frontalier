@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Disclaimer from "@/components/Disclaimer";
 import BlocOffre from "@/components/BlocOffre";
 import FormulaireDroitOption from "./FormulaireDroitOption";
@@ -32,6 +33,17 @@ export default function DroitOptionPage() {
       </header>
 
       <FormulaireDroitOption />
+
+      <p className="text-sm text-slate-600">
+        Pour les critères de choix&nbsp;:{" "}
+        <Link
+          href="/comparatifs/lamal-vs-cmu-frontalier"
+          className="font-medium text-slate-900 underline"
+        >
+          comparatif LAMal vs CMU
+        </Link>
+        .
+      </p>
 
       {AFFILIATE_LINKS.length > 0 && (
         <section className="rounded-2xl border border-slate-200 p-5">

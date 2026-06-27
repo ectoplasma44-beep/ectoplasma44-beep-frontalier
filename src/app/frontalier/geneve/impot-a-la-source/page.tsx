@@ -56,6 +56,16 @@ export default function ImpotSourcePage() {
         </Link>{" "}
         : si vous êtes éligible, vous pourriez récupérer des déductions.
       </p>
+      <p className="text-sm text-slate-600">
+        Voir aussi&nbsp;:{" "}
+        <Link
+          href="/comparatifs/impot-source-vs-declaration"
+          className="font-medium text-slate-900 underline"
+        >
+          impôt à la source ou déclaration en France selon le canton
+        </Link>
+        .
+      </p>
     </PageCantonSituation>
   );
 }

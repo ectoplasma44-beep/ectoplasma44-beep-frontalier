@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageCantonSituation from "@/components/PageCantonSituation";
 
 export const metadata: Metadata = {
@@ -50,6 +51,17 @@ export default function AssuranceMaladieGenevePage() {
         d&apos;option (il renvoie au simulateur officiel URSSAF pour le chiffrage
         CMU exact).
       </div>
+
+      <p className="text-sm text-slate-600">
+        Pour aller plus loin&nbsp;:{" "}
+        <Link
+          href="/comparatifs/lamal-vs-cmu-frontalier"
+          className="font-medium text-slate-900 underline"
+        >
+          comparatif LAMal vs CMU
+        </Link>
+        .
+      </p>
     </PageCantonSituation>
   );
 }

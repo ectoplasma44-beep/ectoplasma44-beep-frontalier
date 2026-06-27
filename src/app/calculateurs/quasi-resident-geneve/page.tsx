@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Disclaimer from "@/components/Disclaimer";
 import BlocOffre from "@/components/BlocOffre";
 import FormulaireQuasiResident from "./FormulaireQuasiResident";
@@ -28,6 +29,17 @@ export default function QuasiResidentPage() {
       </header>
 
       <FormulaireQuasiResident />
+
+      <p className="text-sm text-slate-600">
+        Pour situer votre régime&nbsp;:{" "}
+        <Link
+          href="/comparatifs/impot-source-vs-declaration"
+          className="font-medium text-slate-900 underline"
+        >
+          impôt à la source ou déclaration en France
+        </Link>
+        .
+      </p>
 
       <BlocOffre />
 

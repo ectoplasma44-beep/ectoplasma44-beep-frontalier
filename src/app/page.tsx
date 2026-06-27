@@ -69,6 +69,44 @@ export default function Home() {
         </Link>
       </section>
 
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold">Comparer et comprendre</h2>
+        <ul className="grid gap-4 sm:grid-cols-2">
+          <li>
+            <Link
+              href="/comparatifs/lamal-vs-cmu-frontalier"
+              className="block h-full rounded-2xl border border-slate-200 p-5 transition hover:border-slate-300 hover:shadow-sm"
+            >
+              <h3 className="font-semibold">LAMal ou CMU ?</h3>
+              <p className="mt-1 text-sm text-slate-600">
+                Le droit d&apos;option assurance maladie, les délais et les
+                critères pour choisir.
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/comparatifs/impot-source-vs-declaration"
+              className="block h-full rounded-2xl border border-slate-200 p-5 transition hover:border-slate-300 hover:shadow-sm"
+            >
+              <h3 className="font-semibold">
+                Impôt à la source ou déclaration en France ?
+              </h3>
+              <p className="mt-1 text-sm text-slate-600">
+                Le régime dépend de votre canton de travail.
+              </p>
+            </Link>
+          </li>
+        </ul>
+        <p className="text-sm text-slate-600">
+          Vous avez une question ?{" "}
+          <Link href="/faq" className="font-medium text-slate-900 underline">
+            Consultez la FAQ frontalier
+          </Link>
+          .
+        </p>
+      </section>
+
       <BlocOffre />
     </div>
   );

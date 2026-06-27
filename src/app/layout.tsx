@@ -60,6 +60,23 @@ export default function RootLayout({
 
         <footer className="border-t border-slate-200 bg-slate-50">
           <div className="mx-auto max-w-5xl space-y-3 px-4 py-8">
+            <div className="flex flex-wrap gap-4 text-sm text-slate-600">
+              <Link href="/calculateurs" className="hover:text-slate-900">
+                Calculateurs
+              </Link>
+              <Link href="/frontalier/geneve" className="hover:text-slate-900">
+                Guide Genève
+              </Link>
+              <Link href="/faq" className="hover:text-slate-900">
+                FAQ
+              </Link>
+              <Link
+                href="/assistance-declaration"
+                className="hover:text-slate-900"
+              >
+                Kit d&apos;assistance
+              </Link>
+            </div>
             <p className="text-sm font-medium text-slate-700">
               Mon Impôt Frontalier
             </p>
