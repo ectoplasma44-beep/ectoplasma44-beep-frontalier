@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     "Guides, modèles et explications pas à pas pour préparer votre déclaration de frontalier franco-suisse. Aide à la déclaration, pas un conseil personnalisé.",
 };
 
-// Lien de checkout — placeholder. Abi fournira l'URL Gumroad/Stripe réelle.
-const GUMROAD_URL = "https://gumroad.com/l/PLACEHOLDER";
+// Lien de checkout Gumroad (produit publié). Prix en USD côté Gumroad.
+const GUMROAD_URL = "https://monindemnite.gumroad.com/l/ytxpxi";
 
 const INCLUS = [
   "Un guide pas à pas pour comprendre votre situation de frontalier franco-suisse.",
@@ -47,7 +47,7 @@ export default function AssistanceDeclarationPage() {
         </div>
 
         <aside className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:w-64">
-          <p className="text-3xl font-bold text-slate-900">89&nbsp;€</p>
+          <p className="text-3xl font-bold text-slate-900">89&nbsp;$</p>
           <p className="text-sm text-slate-600">par saison de déclaration</p>
           <a
             href={GUMROAD_URL}

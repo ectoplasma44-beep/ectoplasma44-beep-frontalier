@@ -31,6 +31,9 @@
 - **2026-06-26 — Domaine retenu : `monimpotfrontalier.fr`** (dispo confirmée OVH par Abi). Prolonge le schéma `mon` (monindemnité/monchômage) + capte le mot-clé central « impôt frontalier ».
 
 - **2026-06-26 — Checkout : Gumroad** (cohérence avec monindemnite). Frein connu : page de paiement en **anglais / USD** → friction de conversion possible. Arbitrage assumé « signal d'abord ». **À réévaluer avec la data** (taux de conversion réel) ; migration Stripe possible ensuite.
+- **2026-06-28 — CONFIRMÉ (web + aperçu reçu Gumroad)** : Gumroad débite **toujours en USD** au checkout. Avec un prix en €89, le reçu montrait « 89 » puis **$101,37** facturés → écart visible, casse-confiance.
+- **2026-06-28 — DÉCISION : prix du kit fixé en USD à $89** (devise USD dans Gumroad), pour que l'acheteur voie « 89 » de bout en bout, sans saut 89→101. Site aligné sur **`89 $`** (au lieu de `89 €`) pour cohérence checkout. On teste Gumroad ainsi.
+- **Déclencheur migration Stripe** (réserve) : si conversion faible / abandon à l'étape paiement → basculer le lien checkout vers Stripe (EUR natif). Le code n'a qu'à changer l'URL.
 
 - **2026-06-27 — Infra en place** : domaine `monimpotfrontalier.fr` (OVH, DNS Vercel OK, vert), repo réel **`ectoplasma44-beep/ectoplasma44-beep-frontalier`** créé + connecté à Vercel, push #1 réussi (commit 79d6fe8, `origin/main..main` vide).
 

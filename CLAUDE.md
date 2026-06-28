@@ -53,8 +53,10 @@ Règle SEO : laisser un contenu **dormir 90 jours** avant de juger sa position. 
 - [x] Infra : domaine `monimpotfrontalier.fr` (vert), repo `ectoplasma44-beep/ectoplasma44-beep-frontalier` + Vercel connecté.
 - [x] Hub Genève déployé (commit fca5555) : composant `PageCantonSituation` réutilisable + 6 pages (hub + 5 situations), `dossier/08`. Canton-modèle prêt à dupliquer.
 - [x] Étape 6 — Calculateur Salaire net CHF→EUR (C4) déployé (commit 769f0e4). **Les 4 calculateurs sont en ligne.** Charges sociales 2026 sourcées (`dossier/03`), change en saisie utilisateur.
-- [ ] Duplication du hub aux autres cantons (Vaud, Neuchâtel… selon volumes Haloscan) via `PageCantonSituation`.
-- [ ] Comparatifs (LAMal vs CMU, source vs déclaration) + FAQ, puis blog (en dernier).
+- [x] Comparatifs (LAMal vs CMU, source vs déclaration) + FAQ (JSON-LD) déployés (commit df47685). `dossier/09`.
+- [ ] Duplication du hub aux autres cantons (Vaud, Neuchâtel… selon volumes Haloscan, bloc G de `dossier/05`) via `PageCantonSituation`.
+- [ ] Blog (en dernier).
+- **MVP complet en ligne** : produit + 4 calculateurs + hub Genève + comparatifs + FAQ. Reste = expansion longue traîne (cantons) + blog.
 - [ ] Pré-requis Abi restants : produit Gumroad (vrai lien) ; abattement CMU officiel à saisir.
 
 ## 9. Déclencheur de lancement
