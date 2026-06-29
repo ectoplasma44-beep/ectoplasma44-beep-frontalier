@@ -37,6 +37,9 @@
 
 - **2026-06-27 — Infra en place** : domaine `monimpotfrontalier.fr` (OVH, DNS Vercel OK, vert), repo réel **`ectoplasma44-beep/ectoplasma44-beep-frontalier`** créé + connecté à Vercel, push #1 réussi (commit 79d6fe8, `origin/main..main` vide).
 
+- **2026-06-28 — Kit Genève EN VENTE** : produit Gumroad publié (`monindemnite.gumroad.com/l/ytxpxi`, prix $89 USD), lien branché dans le site (commit e529ea3). Livrables : guide PDF 6 p. + tableur XLSX (test 90 %) + cover/thumbnail. Stamp PDF acheteur activé.
+
 ## Reste en attente (Abi)
-- [ ] **Lien produit Gumroad** à créer + coller dans la page produit (placeholder en attendant).
+- [ ] **Régler le prix Gumroad en USD $89** (sélecteur de devise) si pas déjà fait, + **test d'achat** pour valider la livraison des 2 fichiers.
 - [ ] **Abattement CMU officiel** à saisir dans `parametres-fiscaux.ts` (depuis simulateur URSSAF) pour activer le chiffrage du calculateur Droit d'option.
+- [ ] **Relecture humaine finale du guide** avant de pousser les ventes (§6, non délégable).
